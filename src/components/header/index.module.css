@@ -1,0 +1,10 @@
+.header {
+  color: white;
+  width: 100%;
+  background: url('https://www.rabstol.net/uploads/gallery/main/178/rabstol_net_books_13.jpg')
+    no-repeat center/120% gray;
+  /*-moz-background-size: 100%; !* Firefox 3.6+ *!*/
+  /*-webkit-background-size: 100%; !* Safari 3.1+ и Chrome 4.0+ *!*/
+  /*-o-background-size: 100%; !* Opera 9.6+ *!*/
+  /*background-size: 100%; !* Современные браузеры *!*/
+}
