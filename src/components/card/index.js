@@ -6,6 +6,7 @@ function Card(props) {
         width: 200,
         backgroundColor: "lightgray",
         padding: 10,
+        cursor: "pointer",
       }}
     >
       <div

@@ -10,12 +10,20 @@ export async function getBooks({ text, subject, sorting, startIndex }) {
     url.searchParams.set("q", `${text}+subject:${subject}`);
   }
   const response = await fetch(url.toString());
+  if (!response.ok) {
+    console.error("getBooks", response);
+    throw new Error("ERROR getBooks fetch");
+  }
   return response.json();
 }
 
 export async function getBook(id) {
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes/${id}`
+    `https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.KEY}`
   );
+  if (!response.ok) {
+    console.error("getBook", response);
+    throw new Error("ERROR getBook fetch");
+  }
   return response.json();
 }

@@ -1,8 +1,10 @@
 import style from "./index.module.css";
 import { useState } from "react";
 import { searchedBooks } from "../../stores";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter();
   return (
     <div className={style.header}>
       <div
@@ -14,7 +16,7 @@ function Header() {
         <form
           onSubmit={async (e) => {
             e.preventDefault();
-
+            router.push("/");
             await searchedBooks.getBooks({
               text: searchedBooks.text,
               subject: searchedBooks.subject,
@@ -25,23 +27,12 @@ function Header() {
           }}
         >
           <input
+            className={style.text}
             type={"text"}
-            size={50}
             style={{ padding: "5px" }}
             onChange={(e) => (searchedBooks.text = e.target.value)}
           />
-          <button
-            type={"submit"}
-            // onClick={async () => {
-            //   await searchedBooks.getBooks({
-            //     text: text,
-            //     subject: subject,
-            //     sorting: sorting,
-            //   });
-            // }}
-          >
-            Поиск
-          </button>
+          <button type={"submit"}>Поиск</button>
         </form>
       </div>
       <div

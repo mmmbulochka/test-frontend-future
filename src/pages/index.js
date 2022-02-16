@@ -2,6 +2,7 @@ import { searchedBooks } from "../stores";
 import { observer } from "mobx-react";
 import Card from "../components/card";
 import { useRouter } from "next/router";
+import Loader from "../components/loader";
 
 function Home() {
   const router = useRouter();
@@ -41,6 +42,12 @@ function Home() {
           );
         })}
       </div>
+      {searchedBooks.isSearching && (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Loader />
+        </div>
+      )}
+
       {searchedBooks.searched &&
         searchedBooks.books.length < searchedBooks.number && (
           <div
@@ -55,7 +62,7 @@ function Home() {
                 await searchedBooks.getBooks();
               }}
             >
-              Show more
+              Load more
             </button>
           </div>
         )}

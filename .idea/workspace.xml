@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6a0ab43c-802b-43f2-99b0-92d655656578" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/book/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connections/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connections/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/[book].js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/[book].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/searched-books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/searched-books.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +19,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="24xiKCywbDqN4ADIOO5GlP9J75X" />
   <component name="ProjectLevelVcsManager">
@@ -25,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -53,6 +64,7 @@
       <updated>1644578572387</updated>
       <workItem from="1644578574178" duration="12070000" />
       <workItem from="1644750401936" duration="35280000" />
+      <workItem from="1645017515103" duration="6418000" />
     </task>
     <servers />
   </component>
@@ -69,6 +81,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
