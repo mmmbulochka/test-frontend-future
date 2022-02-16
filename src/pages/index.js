@@ -13,6 +13,7 @@ function Home() {
             display: "flex",
             justifyContent: "center",
             marginBottom: 10,
+            marginTop: 10,
           }}
         >
           Found {searchedBooks.number} results
