@@ -19,7 +19,7 @@ export async function getBooks({ text, subject, sorting, startIndex }) {
 
 export async function getBook(id) {
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.KEY}`
+    `https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.NEXT_PUBLIC_KEY}`
   );
   if (!response.ok) {
     console.error("getBook", response);
